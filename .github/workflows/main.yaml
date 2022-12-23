@@ -1,0 +1,20 @@
+---
+name: main
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  prepare:
+    name: Prepare
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup pthon
+        uses: actions/setup-python@v4
+      - name: Dump python environment
+        run: |
+          python -c'import os,sys;print(os.environ)'
+          python -m pip list
+          python -m pip install -U setuptool pip pip-tools
