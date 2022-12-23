@@ -17,4 +17,4 @@ jobs:
         run: |
           python -c'import os,sys;print(os.environ)'
           python -m pip list
-          python -m pip install -U setuptool pip pip-tools
+          python -m pip install -U setuptools pip pip-tools
