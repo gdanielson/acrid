@@ -1,0 +1,7 @@
+name: pulumi-eks
+main: main.py
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: Basic EKS cluster
