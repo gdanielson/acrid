@@ -4,3 +4,59 @@
 #
 #    pip-compile requirements.in
 #
+arpeggio==2.0.0
+    # via parver
+attrs==22.2.0
+    # via parver
+certifi==2022.12.7
+    # via requests
+charset-normalizer==2.1.1
+    # via requests
+dill==0.3.6
+    # via pulumi
+grpcio==1.50
+    # via pulumi
+idna==3.4
+    # via requests
+parver==0.4
+    # via
+    #   pulumi-aws
+    #   pulumi-aws-native
+    #   pulumi-eks
+    #   pulumi-kubernetes
+protobuf==4.21.12
+    # via pulumi
+pulumi==3.50.2
+    # via
+    #   -r requirements.in
+    #   pulumi-aws
+    #   pulumi-aws-native
+    #   pulumi-eks
+    #   pulumi-kubernetes
+pulumi-aws==5.25.0
+    # via pulumi-eks
+pulumi-aws-native==0.45.0
+    # via -r requirements.in
+pulumi-eks==1.0.1
+    # via -r requirements.in
+pulumi-kubernetes==3.23.1
+    # via pulumi-eks
+pyyaml==6.0
+    # via
+    #   pulumi
+    #   pulumi-kubernetes
+requests==2.28.1
+    # via pulumi-kubernetes
+semver==2.13.0
+    # via
+    #   pulumi
+    #   pulumi-aws
+    #   pulumi-aws-native
+    #   pulumi-eks
+    #   pulumi-kubernetes
+six==1.16.0
+    # via
+    #   grpcio
+    #   pulumi
+urllib3==1.26.13
+    # via requests
