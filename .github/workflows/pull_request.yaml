@@ -1,4 +1,4 @@
-name: Pulumi
+name: pull-request
 
 env:
   AWS_REGION: ${{ secrets.AWS_REGION }}
@@ -11,8 +11,8 @@ on:
   - pull_request
 
 jobs:
-  preview:
-    name: Preview
+  pulumi-preview:
+    name: pulumi preview
     runs-on: ubuntu-latest
 
     steps:
