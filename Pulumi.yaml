@@ -1,7 +1,7 @@
-name: pulumi-eks
+name: acrid-eks-pulumi
 main: main.py
 runtime:
   name: python
   options:
     virtualenv: venv
-description: Basic EKS cluster
+description: Basic EKS cluster using Pulumi
