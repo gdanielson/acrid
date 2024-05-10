@@ -13,3 +13,4 @@ cluster = eks.Cluster(
 
 # Export the cluster's kubeconfig.
 pulumi.export("kubeconfig", cluster.kubeconfig)
+ 
